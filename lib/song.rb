@@ -48,9 +48,9 @@ class Song
     find_by_name(name) || create(name) #returns (does not recreate) an existing song with the provided name if one exists in/ invokes .find_by_name instead of re-coding the same functionality/ creates a song if an existing match is not found/ invokes .create instead of re-coding the same functionality
   end
 
-  def self.new_from_filename(filename)
+  def self.new_from_filename(filename) # initializes a song based on the passed-in filename
     info = filename.split(" - ")
-    artist, name, genre = info[0], info[1], info[2].gsub( ".mp3" , "")
+    artist, name, genre = info[0], info[1], info[2].gsub( ".mp3" , "") # invokes the appropriate Findable methods so as to avoid duplicating objects
     genre = Genre.find_or_create_by_name(genre)
     artist = Artist.find_or_create_by_name(artist)
 
