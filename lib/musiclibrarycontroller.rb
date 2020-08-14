@@ -84,7 +84,7 @@ class MusicLibraryController
      puts "Playing #{sorted_songs[index].name} by #{sorted_songs[index].artist.name}."
    end
  end
-end
+
 
 
 end
