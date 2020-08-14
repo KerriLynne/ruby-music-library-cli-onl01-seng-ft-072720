@@ -54,6 +54,7 @@ class Song
     s.name = name.slice(0...-4)
     s.artist_name = artist
     s
-  end  
+  end
+
 
 end
