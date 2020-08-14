@@ -45,7 +45,7 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    find_by_name(name) || create(name)
+    find_by_name(name) || create(name) #returns (does not recreate) an existing song with the provided name if one exists in/ invokes .find_by_name instead of re-coding the same functionality/ creates a song if an existing match is not found/ invokes .create instead of re-coding the same functionality
   end
 
 end
