@@ -1,6 +1,6 @@
 class Artist
 
-extend Concerns::Findable  
+  extend Concerns::Findable  
 
   attr_accessor :name # accepts a name for the new artist
   attr_reader :songs
