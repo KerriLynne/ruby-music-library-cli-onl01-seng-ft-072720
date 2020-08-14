@@ -5,5 +5,8 @@ class MusicLibraryController
     importer.import  # invokes the #import method on the created MusicImporter object
   end
 
+  def call
+  end  
+
 
 end
