@@ -39,4 +39,6 @@ class MusicLibraryController
       puts "#{i}. #{genre.name}"}
   end
 
+  list_songs_by_artist
+
 end
