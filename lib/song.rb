@@ -44,7 +44,7 @@ class Song
     all.detect {|song| song.name == name} # finds a song instance in @@all by the name property of the song
   end
 
-  def self.find_or_create_by_name
+  def self.find_or_create_by_name(name)
     find_by_name(name) || create(name)
   end
 
