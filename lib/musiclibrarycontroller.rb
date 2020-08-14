@@ -81,7 +81,7 @@ class MusicLibraryController
    index = gets.strip.to_i - 1
 
    if index.between?(0, sorted_songs.length)
-     puts "Playing #{sorted_songs}"
+     puts "Playing #{song}"
    end
  end
 
