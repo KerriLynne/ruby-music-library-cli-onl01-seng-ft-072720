@@ -8,8 +8,8 @@ class MusicLibraryController
   def call
     input = ""
 
-    while input != "exit"
-      puts "Welcome to your music library!"
+    while input != "exit"  #loops and asks for user input until they type in exit
+      puts "Welcome to your music library!"   # welcomes the user
       puts "To list all of your songs, enter 'list songs'."
       puts "To list all of the artists in your library, enter 'list artists'."
       puts "To list all of the genres in your library, enter 'list genres'."
@@ -18,7 +18,7 @@ class MusicLibraryController
       puts "To play a song, enter 'play song'."
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
-      input = gets
+      input = gets  #asks the user for input
     end
 
   end
