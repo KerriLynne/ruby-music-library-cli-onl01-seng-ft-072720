@@ -20,7 +20,7 @@ class MusicLibraryController
       puts "What would you like to do?"
       input = gets  #asks the user for input
 
-      case input
+      case input  #CLI Commands
       when 'list songs'
         self.list_songs
       when 'list artists'
@@ -33,7 +33,7 @@ class MusicLibraryController
         self.list_songs_by_genre
       when 'play song'
         self.play_song
-        
+
       end
     end
 
