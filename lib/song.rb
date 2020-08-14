@@ -51,9 +51,9 @@ class Song
   def self.new_from_filename(filename) # initializes a song based on the passed-in filename
     info = filename.split(" - ")
     artist, name, genre = info[0], info[1], info[2].gsub( ".mp3" , "") # invokes the appropriate Findable methods so as to avoid duplicating objects
-    # genre = Genre.find_or_create_by_name(genre)
-    # artist = Artist.find_or_create_by_name(artist)
-    #
+    genre = Genre.find_or_create_by_name(genre)
+    artist = Artist.find_or_create_by_name(artist)
+
     # new(name,artist,genre)
   end
 
