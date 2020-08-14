@@ -57,9 +57,9 @@ class Song
     new(name,artist,genre)
   end
 
-  def self.create_from_filename(filename)
-    new_from_filename(filename).tap{ |s| s.save}
-  end  
+  def self.create_from_filename(filename) # initializes and saves a song based on the passed-in filename
+    new_from_filename(filename).tap{ |s| s.save} # invokes .new_from_filename instead of re-coding the same functionality
+  end
 
 
 end
