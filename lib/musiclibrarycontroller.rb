@@ -19,6 +19,11 @@ class MusicLibraryController
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
       input = gets  #asks the user for input
+
+      case input
+      when 'list songs'
+        self.list_songs
+      end
     end
 
   end
