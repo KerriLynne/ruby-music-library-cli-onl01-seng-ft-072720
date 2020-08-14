@@ -10,7 +10,7 @@ class MusicImporter
   end
 
   def import
-    files.each {|file| Song.create_from_filename(file) }
+    files.each {|file| Song.create_from_filename(file) } # imports the files into the library by invoking Song.create_from_filename
   end
 
 
