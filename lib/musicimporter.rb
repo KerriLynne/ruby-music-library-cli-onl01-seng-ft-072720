@@ -10,8 +10,8 @@ class MusicImporter
   end
 
   def import(files)
-    Song.create_from_filename.tap{|s| s.save}
-
+    files.each {|file| Song.create_from_filename(file) }
+  end  
 
 
 end
