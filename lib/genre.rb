@@ -1,5 +1,7 @@
 class Genre
 
+  extend Concerns::Findable  
+
   attr_accessor :name # accepts a name for the new genre
   attr_reader :songs
 
