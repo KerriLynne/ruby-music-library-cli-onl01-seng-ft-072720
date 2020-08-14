@@ -30,7 +30,9 @@ class MusicLibraryController
       when 'list artist'
         self.list_songs_by_artist
       when 'list genre'
-        self.list_songs_by_genre  
+        self.list_songs_by_genre
+      when 'play song'
+        self.play_song
       end
     end
 
