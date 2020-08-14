@@ -86,11 +86,11 @@ class MusicLibraryController
 
 
 
-  if (1..songs.length).include?(input)
+  if (1..songs.length).include?(input)   # upon receiving valid input 'plays' the matching song from the alphabetized list output by #list_songs/ checks that the user entered a number between 1 and the total number of songs in the library
     song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
   end
 
-  puts "Playing #{song.name} by #{song.artist.name}" if song
+  puts "Playing #{song.name} by #{song.artist.name}" if song #does not 'puts' anything out if a matching song is not found
 end
 
 
